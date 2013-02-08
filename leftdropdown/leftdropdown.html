@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Stu Nicholls | CSSplay | A CSS only cross-browser slide down menu with no hacks </title>
+<meta name="Keywords" content="cssplay, css, play, Cascading, Style, Sheets, experiments, demonstrations, menu, mouseover, image, text, hover,no, hacks, slide, down" />
+<meta name="Description" content="CSS play - multi-level float/drop concertina menu without hacks for IE6" />
+
+<meta name="Author" content="Stu Nicholls" />
+<meta name="verify-v1" content="n3Dpx4NklZjg5p/Tq7h1q+Oj6Ml83crtkO/PwepVQ6Y=" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="meta" href="http://www.cssplay.co.uk/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+<meta http-equiv="pics-Label" content='(pics-1.1 "http://www.icra.org/pics/vocabularyv03/" l gen true for "http://cssplay.co.uk" r (n 0 s 0 v 0 l 0 oa 0 ob 0 oc 0 od 0 oe 0 of 0 og 0 oh 0 c 0)  gen true for "http://www.cssplay.co.uk" r (n 0 s 0 v 0 l 0 oa 0 ob 0 oc 0 od 0 oe 0 of 0 og 0 oh 0 c 0))' />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.cssplay.co.uk/feed.xml" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="icon" href="favicon.ico" type="image/ico" />
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:500,700' rel='stylesheet' type='text/css' />
+
+<!--[if gte IE 7]><!-->
+<script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'fdc2c422-ae8d-414c-a5bb-68c389e4688d'});</script>
+<!--<![endif]-->
+
+<link rel="stylesheet" media="all" type="text/css" href="../styles/default.css" />
+
+<style type="text/css">
+/* ================================================================
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/dl-slide.html
+Copyright (c) Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any
+way to fit your requirements.
+=================================================================== */
+
+ a, a:visited, a:hover, a:active, a:focus {direction:ltr; outline:0;}
+
+ #positioner {position:relative; width:160px; height:160px; margin-left:10px;z-index:100;}
+ #holder {position:absolute; width:150px; background:url(tab_0.gif) repeat-x left top; overflow:hidden; border:5px solid #000;}
+ dl.menu {width:300px; float:left; margin:-32700px -150px 0 0; background:url(tab_0.gif) no-repeat left bottom;}
+ dl.menu a {display:block; height:30px; color:#fff; font:normal 11px/28px verdana, sans-serif; text-decoration:none; text-align:center;}
+
+ dl.menu dt {float:left; padding:0; margin:32700px 0 0 0; position:relative; z-index:50;}
+ dl.menu dt a {background:transparent; width:150px;}
+ dl.menu dt a:hover,
+ dl.menu dt a:focus,
+ dl.menu dt a:active
+ {margin-right:1px; background:url(tab_1.gif) no-repeat left top;}
+
+ dl.menu dd {float:left; padding:30px 0 0 0; margin:-30px 0 0 0; position:relative; z-index:10; background:url(tab_1.gif) no-repeat left top;}
+ dl.menu dd a {background:#666;width:150px;}
+ dl.menu dd a.last1 {border-bottom:30px solid #666;}
+ dl.menu dd a.last2 {border-bottom:60px solid #666;}
+
+ dl.menu dd a:hover,
+ dl.menu dd a:focus,
+ dl.menu dd a:active
+ {margin-right:1px; background:#ccc; color:#000;}
+</style>
+
+</head>
+
+<body>
+
+
+
+		<div id="info">
+
+<h2>Definition list slide down menu - NO hacks, NO conditional comments, NO tables and NO javascript.</h2>
+<h3>9th September 2009</h3>
+<br />
+<div id="positioner">
+<div id="holder">
+<dl class="menu">
+	<dt>
+		<a href="#url">Home</a>
+	</dt>
+</dl>
+<dl class="menu">
+	<dt>
+		<a href="#url">Products</a>
+	</dt>
+	<dd>
+		<a href="#url">Digital Cameras</a>
+		<a href="#url">Monopods &amp; Tripods</a>
+		<a href="#url">Flashguns &amp; Reflectors</a>
+		<a class="last1" href="#url">Telephoto Lenses</a>
+	</dd>
+</dl>
+<dl class="menu">
+	<dt>
+		<a href="#url">Services</a>
+	</dt>
+	<dd>
+		<a href="#url">Enlarging</a>
+		<a href="#url">Framing &amp; Restoring</a>
+		<a href="#url">Printing</a>
+		<a href="#url">Copying</a>
+		<a href="#url">Sepia Toning</a>
+	</dd>
+</dl>
+<dl class="menu">
+	<dt>
+		<a href="#url">Outlets</a>
+	</dt>
+	<dd>
+		<a href="#url">London</a>
+		<a href="#url">Gloucestershire</a>
+		<a href="#url">East Midlands</a>
+		<a class="last1" href="#url">Glasgow</a>
+	</dd>
+</dl>
+<dl class="menu">
+	<dt>
+		<a href="#url">Terms</a>
+	</dt>
+	<dd>
+		<a href="#url">Payment Methods</a>
+		<a href="#url">Conditions of Sale</a>
+		<a class="last2" href="#url">Privacy Policy</a>
+	</dd>
+</dl>
+</div>
+</div>
+<p class="info">Photographers control the camera and lens to "expose" the light recording material (such as film) to the required amount of light to form a "latent image" (on film) or "raw file" (in digital cameras) which, after appropriate processing, is converted to a usable image. Digital cameras use an electronic image sensor based on light-sensitive electronics such as charge-coupled device (CCD) or complementary metal-oxide-semiconductor (CMOS) technology. The resulting digital image is stored electronically, but can be reproduced on paper or film.</p>
+
+
+</body>
+</html>
